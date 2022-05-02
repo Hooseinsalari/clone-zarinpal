@@ -52,7 +52,7 @@ header {
   width: max-content;
   text-align: center;
   padding: 0;
-  top: -2px;
+  top: -6px;
   position: relative;
 }
 
@@ -92,6 +92,111 @@ header {
 .nav__items-button a:hover {
     background-color: rgb(227 197 0 / 15%);
 }
+
+/* show ul when hover on navbar items */
+.nav__list-items-more {
+    transition: all .3s ease-in-out;
+    z-index: 999;
+    position: absolute;
+    top: 50px;
+    min-width: 400px;
+    height: 219px;
+    text-align: right;
+    background-color: #fff;
+    border-bottom: 1px solid hsla(0,0%,100%,.07);
+    box-shadow: 0 20px 40px 0 rgb(36 39 51 / 15%);
+    border-radius: 12px;
+    border-top: 5px solid #f8e88b;
+    display: none;
+    align-items: flex-start;
+   
+}
+
+.nav__list-items-section {
+  padding: 15px 6px;
+}
+
+.nav__list-items-section a {
+  text-decoration: none;
+  color: #000;
+  display: inline-block;
+  margin: 2px 0;
+}
+
+.nav__list-items-section a:hover {
+  background-color: #f5f8fe;
+  border-radius: 5px;
+}
+
+.nav__list-items-section a div {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 5px 0;
+}
+
+.nav__list-items-section a div p:first-of-type {
+    color: #303030;
+    font-family: YekanBakhBold;
+    position: relative;
+    top: 5px;
+}
+
+.nav__list-items-section a div p:first-of-type:hover {
+  color: #385385;
+}
+
+.nav__list-items-section a div p:last-of-type {
+    font-size: 12px;
+    position: relative;
+    font-family: YekanBakhBold;
+    top: 2px;
+}
+
+.nav__list-items-more-list {
+    display: none;
+    transition: all .3s ease-in-out;
+    z-index: 999;
+    position: absolute;
+    top: 50px;
+    left: 10px;
+    min-width: 123px;
+    text-align: right;
+    background-color: #fff;
+    border-bottom: 1px solid hsla(0,0%,100%,.07);
+    box-shadow: 0 20px 40px 0 rgb(36 39 51 / 15%);
+    border-radius: 12px;
+    border-top: 5px solid #f8e88b;
+    padding-top: 15px;
+    list-style-type: none;
+    font-family: 'YekanBakhMedium';
+    font-weight: 400;
+  }
+  
+  .nav__list-items-more-list li {
+    display: block;
+    color: #303030;
+    margin: 0;
+    padding: 10px 20px;
+    box-sizing: content-box;
+    border-bottom: 1px solid #ededed;
+    transition: .4s;
+    font-size: 14px;
+    white-space: nowrap
+}
+
+.nav__list-items-more-list li:last-child {
+  border: none;
+}
+
+@keyframes showUp {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+/* ------------------- */
 
 /* hamburgrmenu */
 
@@ -169,6 +274,8 @@ header {
   width: 15px;
   margin-right: 5px;
 }
+
+/* ------------------- */
 
 /* responsive */
 @media (max-width: 1200px) {
