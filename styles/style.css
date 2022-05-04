@@ -6,10 +6,11 @@
 
 body {
   font-family: iranyekanwebmedium, Arial, Helvetica, sans-serif;
-  background-color: #28457b;
+  /* background-color: #28457b; */
   z-index: 5;
 }
 
+/* == navigation == */
 header {
   display: flex;
   align-items: center;
@@ -27,8 +28,8 @@ header {
 }
 
 .nav__logo {
-    margin: 11px 28px;
-    cursor: pointer;
+  margin: 11px 28px;
+  cursor: pointer;
 }
 
 .nav__list {
@@ -57,9 +58,9 @@ header {
 }
 
 .nav__show-more-items {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .nav__list-item a {
@@ -74,42 +75,41 @@ header {
   margin-right: 5px;
 }
 
-.nav__items-button a{
-    border-radius: 20px;
-    border: none;
-    position: relative;
-    top: 0;
-    font-family: YekanBakhBold;
-    font-size: 14px;
-    color: #28457b;
-    background-color: rgba(232,239,254,.6);
-    min-width: 108px;
-    margin-right: 20px;
-    padding: 10px 27px;
-    transition: 0.2s;
+.nav__items-button a {
+  border-radius: 20px;
+  border: none;
+  position: relative;
+  top: 0;
+  font-family: YekanBakhBold;
+  font-size: 14px;
+  color: #28457b;
+  background-color: rgba(232, 239, 254, 0.6);
+  min-width: 108px;
+  margin-right: 20px;
+  padding: 10px 27px;
+  transition: 0.2s;
 }
 
 .nav__items-button a:hover {
-    background-color: rgb(227 197 0 / 15%);
+  background-color: rgb(227 197 0 / 15%);
 }
 
 /* show ul when hover on navbar items */
 .nav__list-items-more {
-    transition: all .3s ease-in-out;
-    z-index: 999;
-    position: absolute;
-    top: 50px;
-    min-width: 400px;
-    height: 219px;
-    text-align: right;
-    background-color: #fff;
-    border-bottom: 1px solid hsla(0,0%,100%,.07);
-    box-shadow: 0 20px 40px 0 rgb(36 39 51 / 15%);
-    border-radius: 12px;
-    border-top: 5px solid #f8e88b;
-    display: none;
-    align-items: flex-start;
-   
+  transition: all 0.3s ease-in-out;
+  z-index: 999;
+  position: absolute;
+  top: 50px;
+  min-width: 400px;
+  height: 219px;
+  text-align: right;
+  background-color: #fff;
+  border-bottom: 1px solid hsla(0, 0%, 100%, 0.07);
+  box-shadow: 0 20px 40px 0 rgb(36 39 51 / 15%);
+  border-radius: 12px;
+  border-top: 5px solid #f8e88b;
+  display: none;
+  align-items: flex-start;
 }
 
 .nav__list-items-section {
@@ -135,10 +135,10 @@ header {
 }
 
 .nav__list-items-section a div p:first-of-type {
-    color: #303030;
-    font-family: YekanBakhBold;
-    position: relative;
-    top: 5px;
+  color: #303030;
+  font-family: YekanBakhBold;
+  position: relative;
+  top: 5px;
 }
 
 .nav__list-items-section a div p:first-of-type:hover {
@@ -146,56 +146,48 @@ header {
 }
 
 .nav__list-items-section a div p:last-of-type {
-    font-size: 12px;
-    position: relative;
-    font-family: YekanBakhBold;
-    top: 2px;
+  font-size: 12px;
+  position: relative;
+  font-family: YekanBakhBold;
+  top: 2px;
 }
 
 .nav__list-items-more-list {
-    display: none;
-    transition: all .3s ease-in-out;
-    z-index: 999;
-    position: absolute;
-    top: 50px;
-    left: 10px;
-    min-width: 123px;
-    text-align: right;
-    background-color: #fff;
-    border-bottom: 1px solid hsla(0,0%,100%,.07);
-    box-shadow: 0 20px 40px 0 rgb(36 39 51 / 15%);
-    border-radius: 12px;
-    border-top: 5px solid #f8e88b;
-    padding-top: 15px;
-    list-style-type: none;
-    font-family: 'YekanBakhMedium';
-    font-weight: 400;
-  }
-  
-  .nav__list-items-more-list li {
-    display: block;
-    color: #303030;
-    margin: 0;
-    padding: 10px 20px;
-    box-sizing: content-box;
-    border-bottom: 1px solid #ededed;
-    transition: .4s;
-    font-size: 14px;
-    white-space: nowrap
+  display: none;
+  transition: all 0.3s ease-in-out;
+  z-index: 999;
+  position: absolute;
+  top: 50px;
+  left: 10px;
+  min-width: 123px;
+  text-align: right;
+  background-color: #fff;
+  border-bottom: 1px solid hsla(0, 0%, 100%, 0.07);
+  box-shadow: 0 20px 40px 0 rgb(36 39 51 / 15%);
+  border-radius: 12px;
+  border-top: 5px solid #f8e88b;
+  padding-top: 15px;
+  list-style-type: none;
+  font-family: "YekanBakhMedium";
+  font-weight: 400;
+}
+
+.nav__list-items-more-list li {
+  display: block;
+  color: #303030;
+  margin: 0;
+  padding: 10px 20px;
+  box-sizing: content-box;
+  border-bottom: 1px solid #ededed;
+  transition: 0.4s;
+  font-size: 14px;
+  white-space: nowrap;
 }
 
 .nav__list-items-more-list li:last-child {
   border: none;
 }
 
-@keyframes showUp {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
 /* ------------------- */
 
 /* hamburgrmenu */
@@ -212,7 +204,7 @@ header {
   top: 0;
   right: 0;
   z-index: 100;
-  font-family: 'iranyekanwebmedium';
+  font-family: "iranyekanwebmedium";
   transform: translateY(-100%);
   transition: all 0.3s ease-in-out;
   opacity: 0;
@@ -227,7 +219,7 @@ header {
 .nav__hamburger-nav-cross {
   width: 100%;
   text-align: left;
-  padding: 25px 0 ;
+  padding: 25px 0;
 }
 
 .nav__hamburger-nav-cross-img {
@@ -275,7 +267,108 @@ header {
   margin-right: 5px;
 }
 
+/* == == == == == == == == */
+
+/* main-banner */
+
+.banner {
+  width: 1168px;
+  padding: 124px 60px 80px;
+  background-image: linear-gradient(135deg, #21254e, #2b4a83);
+  border-radius: 20px;
+  margin: 20px auto;
+  display: flex;
+  justify-content: space-between;
+  
+}
+
+.banner .banner-text h3 {
+  font-family: "YekanBakhHeavy";
+  font-size: 2rem;
+  color: #fff;
+}
+
+.banner .banner-text p {
+  color: #fff;
+  font-size: 18px;
+  margin: 25px 0;
+  line-height: 2.5rem;
+  font-family: "YekanBakhMedium";
+}
+
+.banner-button {
+  margin: 40px 0;
+  font-family: "YekanBakhBold";
+}
+
+.banner-button a {
+  text-decoration: none;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 17px;
+  padding: 4px 14px;
+  display: inline-block;
+  background-color: #fff;
+  line-height: 28px;
+  border-radius: 10px;
+}
+
+.banner-button a:first-child {
+  background: transparent linear-gradient(270deg, #ffd900, #ffe422) 0 0
+    no-repeat padding-box;
+  color: #000;
+  margin-left: 10px;
+  text-align: center;
+}
+
+.banner-button a:last-child {
+  box-shadow: 0 3px 9px 0 rgb(0 0 0 / 3%);
+  text-align: center;
+  color: #fff;
+  background: #435a8a 0 0 no-repeat padding-box;
+  margin-left: 10px;
+}
+
+.banner-image img {
+  width: 500px;
+}
+
+.go-down {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  bottom: 58px;
+}
+
+.go-down div {
+  background-image: url('../images/arrowbottom.svg');
+  width: 164px;
+  height: 78px;
+}
+
+.go-down img {
+  cursor: pointer;
+  width: 18px;
+  color: #21254e;
+  position: absolute;
+  top: 15px;
+}
 /* ------------------- */
+
+/* key frame */
+@keyframes showUp {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* -------------- */
 
 /* responsive */
 @media (max-width: 1200px) {
@@ -283,13 +376,22 @@ header {
   header {
     width: 941px;
   }
+
+  /* benner */
+  .banner {
+    padding: 40px 20px 85px;
+    width: 938px;
+  }
+
+  .banner-image img {
+    width: 430px;
+  }
 }
 
 @media (max-width: 990px) {
   /* nav */
   header {
     width: auto;
-    /* padding: 20px 60px; */
     padding: 21px 40px 7px 30px;
   }
 
@@ -304,10 +406,41 @@ header {
   .nav__logo {
     margin: 0;
   }
+
+  /* benner */
+  .banner {
+    width: auto;
+    margin: 0 10px;
+    margin-top: 20px;
+    padding: 40px 40px 85px;
+  }
+  .banner-text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .banner .banner-text p {
+    margin: 0;
+    text-align: center;
+    font-size: 18px;
+  }
+
+  .banner-image {
+    display: none;
+  }
+
+  .banner-button {
+    margin: 0;
+  }
+
+  .go-down {
+    bottom: 39px;
+  }
 }
 
 @media (max-width: 768px) {
-
   header {
     width: auto;
     padding: 10px 8px;
@@ -319,5 +452,32 @@ header {
 
   .nav__hamburger-icon {
     display: block;
+  }
+
+  
+}
+
+@media (max-width: 575px) {
+  .banner .banner-text h3 {
+    text-align: right;
+    font-size: 20px;
+    padding-right: 19px;
+    line-height: 44px;
+  }
+
+  .banner .banner-text p {
+    font-size: 16px;
+    line-height: 36px;
+    max-width: 90%;
+    margin: auto;
+    text-align: center;
+  }
+
+  .banner-text {
+    align-items: flex-start;
+  }
+
+  .banner-button {
+    margin: auto;
   }
 }
