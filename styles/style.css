@@ -713,6 +713,30 @@ footer .social-media {
   background-color: #eff4fe;
 }
 
+/* ------ */
+
+/* * bell  */
+.bell {
+  width: 48px;
+  height: 48px;
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  background-color: #237bff;
+  border-radius: 50%;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #fff;
+  cursor: pointer;
+}
+
+.bell img {
+  width: 23px;
+  height: 26px;
+}
+
 /*! key frame */
 @keyframes showUp {
   0% {
@@ -1100,7 +1124,7 @@ footer .social-media {
   }
 
   .footer-links p , .footer-links a {
-    font-size: 0.8rem;
+    font-size: 0.9rem;
   }
 
   footer .social-media {
