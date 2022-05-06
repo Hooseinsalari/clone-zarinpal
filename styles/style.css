@@ -10,7 +10,7 @@ body {
   z-index: 5;
 }
 
-/* == navigation == */
+/* ! == navigation == */
 header {
   display: flex;
   align-items: center;
@@ -188,9 +188,9 @@ header {
   border: none;
 }
 
-/* ------------------- */
+/* ! ------------------- */
 
-/* hamburgrmenu */
+/* ? hamburgrmenu */
 
 .nav__hamburger-icon {
   width: 27px;
@@ -267,9 +267,9 @@ header {
   margin-right: 5px;
 }
 
-/* == == == == == == == == */
+/* ? == == == == == == == == */
 
-/* main-banner */
+/* * main-banner */
 
 .banner {
   width: 1168px;
@@ -355,9 +355,9 @@ header {
   position: absolute;
   top: 15px;
 }
-/* ------------------- */
+/* * ------------------- */
 
-/* cart - online payment */
+/* ! cart - online payment */
 
 .online-payment {
   width: 1170px;
@@ -461,16 +461,13 @@ header {
 
 .online-payment .second-img img{
   width: 580px;
-  height: 530px;
 }
 
-.zarincard-img {
-  width: 550px;
+#zarincart-text {
+  margin-top: 50px;
 }
 
-.zarincard-img img {
-  height: 600px;
-}
+/* ! -------------- */
 
 /* key frame */
 @keyframes showUp {
@@ -506,8 +503,8 @@ header {
     width: 940px;
   }
 
-  .zarincard-img img{
-    width: 600px;
+  .zarincard-img{
+    margin-left: 20px;
   }
 }
 
@@ -579,8 +576,10 @@ header {
   }
 
   .zarincard-img {
-    width: auto;
+    margin: auto;
+    height: 380px;
   }
+  
 }
 
 @media (max-width: 768px) {
@@ -648,6 +647,11 @@ header {
   .text-section {
     width: 80%;
     padding: 0 10px;
+    margin-bottom: 20px;
+  }
+
+  #zarincart-text {
+    margin-top: 15px;
   }
 
   .text-section h3 {
